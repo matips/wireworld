@@ -24,7 +24,7 @@ measure.o: measure.c *.h
 	mpic++ -c measure.c -g
 
 measure: measure.o wireworld.o ppm.o
-	mpic++ wireworld.o ppm.o measure.o -o measure -g
+	mpic++ wireworld.o measure.o -o measure -g
 
 clean:
 	rm *.o *.exe
