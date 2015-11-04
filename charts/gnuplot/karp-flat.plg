@@ -1,0 +1,16 @@
+set key autotitle columnhead
+set datafile separator ','
+
+set terminal png size 1400,1300 
+#set output 'plot.png'
+set terminal x11
+set autoscale
+
+set xlabel "process"
+set ylabel "karp-flat"
+
+plot "out/counted_10000000.csv" using 3:7 title '1e7 iterations' with lines, \
+	"out/counted_50000000.csv" using 3:7 title '5e7 iterations' with lines, \
+	"out/counted_100000000.csv" using 3:7 title '1e8 iterations' with lines
+
+pause -1

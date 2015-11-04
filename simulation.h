@@ -1,0 +1,8 @@
+//
+// Created by SG0220005 on 11/4/2015.
+//
+
+#ifndef WIREWORLD_SIMULATION_H
+#define WIREWORLD_SIMULATION_H
+
+#endif //WIREWORLD_SIMULATION_H

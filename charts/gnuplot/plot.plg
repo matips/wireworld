@@ -1,0 +1,19 @@
+set key autotitle columnhead
+set datafile separator ','
+
+set label "Time form problem size" at screen 0.5,0.95 center front
+set terminal png size 1400,1300 
+set output 'plot.png'
+#set terminal x11
+set autoscale
+
+set xlabel "array size"
+set ylabel "time [us]"
+
+plot "charts/data/counted_100000.csv" using 1:2 title '1e5 size' with lines, \
+	"charts/data/counted_1000000.csv" using 1:2 title '5e6 size' with lines, \
+	"charts/data/counted_1000000000.csv" using 1:2 title '1e9 size' with lines, \
+        "charts/data/counted_100000000000.csv.csv" using 1:2 title '1e11 size' with lines
+
+
+pause -1
