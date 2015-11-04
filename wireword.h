@@ -5,7 +5,17 @@
 #ifndef WIREWORLD_WIREWORD_H
 #define WIREWORLD_WIREWORD_H
 
-#include "ppm.h"
+typedef enum {
+    empty = 0,
+    head = 1,
+    tail = 2,
+    conductor = 3
+} State;
+
+typedef struct {
+    int x, y;
+    State *data;
+} Grid;
 
 int wireworld(Grid *grid, int steps, void (*present_simulation)(Grid *));
 
@@ -17,5 +27,6 @@ typedef struct {
 } Node_config;
 
 Node_config get_node(Grid *grid);
+
 
 #endif //WIREWORLD_WIREWORD_H

@@ -3,7 +3,7 @@
 //
 
 #include "display.hh"
-#include "colors.h"
+#include "colors.hh"
 
 #include <windows.h>
 #include <stdio.h>

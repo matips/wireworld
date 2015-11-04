@@ -5,17 +5,7 @@
 #ifndef WIREWORLD_PPM_H
 #define WIREWORLD_PPM_H
 
-typedef enum {
-    empty = 0,
-    head = 1,
-    tail = 2,
-    conductor = 3
-} State;
-
-typedef struct {
-    int x, y;
-    State *data;
-} Grid;
+#include "wireword.h"
 
 typedef struct {
     unsigned char red, green, blue;

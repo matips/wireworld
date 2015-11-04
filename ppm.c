@@ -2,7 +2,7 @@
 #include<stdlib.h>
 #include "wireword.h"
 #include "ppm.h"
-#include "colors.h"
+#include "colors.hh"
 
 #define CREATOR "Mateusz Pszczolka"
 #define RGB_COMPONENT_COLOR 255
