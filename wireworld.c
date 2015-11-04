@@ -5,7 +5,6 @@
 #include <time.h> 
 #include <omp.h>
 #include <unistd.h>
-#include "ppm.h"
 #include <string.h>
 #include "simulation.h"
 #include "wireword.h"
